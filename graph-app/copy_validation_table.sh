@@ -1,0 +1,1 @@
+psql -h postgres.nerc-bas.ac.uk -U polarview -d polarview -c "\copy public.osisaf_validation_results(osisaf_edge_date, agree) TO '/users/polarview/scripts/osisaf/graph-app/data.csv' with (format csv,header false, delimiter ',');"
